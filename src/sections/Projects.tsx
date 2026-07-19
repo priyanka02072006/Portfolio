@@ -6,15 +6,15 @@ import { useScrollReveal, useTilt } from '../hooks/useAnimations';
 const projects = [
   {
     title: 'Rain Guard: Cloth Automation Sensor',
-    description: 'Intelligent cloth automation using rainfall sensors. Automated system that detects rain and triggers cloth protection mechanisms.',
-    tech: ['Arduino', 'Sensors', 'Automation', 'IoT'],
+    description: 'Rain Guard is a hardware-based automatic cloth protection system designed to safeguard clothes from unexpected rainfall. It uses a rain-sensing mechanism to detect rain and automatically retracts the clothesline into a sheltered area using a motorized mechanism. The project minimizes manual effort, prevents clothes from getting wet, and offers a practical and efficient solution for smart household automation.',
+    tech: ['Arduino', 'Sensors', 'Automation', 'dc-motor'],
     icon: CloudRain,
     color: 'from-cyan-400 to-blue-500',
-    demoUrl: '',
+    demoUrl: 'https://drive.google.com/file/d/12pINq6Nk3VmEaVoOs0eBjuPZCnxu16ft/view?usp=sharing',
   },
   {
     title: 'CircularIQ',
-    description: 'CircularIQ is an AI-powered B2B circular economy platform that transforms industrial waste into valuable resources through intelligent matching, carbon analytics, and sustainability insights. Built with Next.js, TypeScript, Tailwind CSS, React, and modern AI technologies',
+    description: 'CircularIQ is an AI-powered B2B circular economy platform that transforms industrial waste into valuable resources through intelligent matching, carbon analytics, and sustainability insights.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'AI'],
     icon: Recycle,
     color: 'from-emerald-400 to-teal-500',
@@ -22,11 +22,11 @@ const projects = [
   },
   {
     title: 'Stride with Safety',
-    description: 'Wearable safety system with emergency alert features. IoT-based device for personal safety with GPS tracking and SOS alerts.',
-    tech: ['IoT', 'GPS', 'Sensors', 'Mobile App'],
+    description: 'Stride with Safety is a hardware-based smart shoe developed to enhance personal safety by providing a reliable emergency alert mechanism. Designed for ease of use and portability, the system enables users to quickly trigger an emergency response during critical situations. The project focuses on creating a practical wearable safety solution through efficient electronic circuit design and hardware integration.',
+    tech: ['Electronics', 'embedded-systems', 'Sensors', 'Wearable Technology'],
     icon: ShieldCheck,
     color: 'from-rose-400 to-orange-500',
-    demoUrl: '',
+    demoUrl: 'https://drive.google.com/file/d/1rpk12QTlbQN9zYQRWVpL3-Jrz7KAwOws/view?usp=sharing',
   },
   {
     title: 'Carbon-Chain',
