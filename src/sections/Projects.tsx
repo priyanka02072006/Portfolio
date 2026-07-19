@@ -6,7 +6,7 @@ import { useScrollReveal, useTilt } from '../hooks/useAnimations';
 const projects = [
   {
     title: 'Rain Guard: Cloth Automation Sensor',
-    description: 'Rain Guard is a hardware-based automatic cloth protection system designed to safeguard clothes from unexpected rainfall. It uses a rain-sensing mechanism to detect rain and automatically retracts the clothesline into a sheltered area using a motorized mechanism. The project minimizes manual effort, prevents clothes from getting wet, and offers a practical and efficient solution for smart household automation.',
+    description: 'Rain Guard is a hardware-based automatic cloth protection system that detects rainfall and automatically retracts clothes to a sheltered area, protecting them from unexpected weather while reducing manual effort.',
     tech: ['Arduino', 'Sensors', 'Automation', 'dc-motor'],
     icon: CloudRain,
     color: 'from-cyan-400 to-blue-500',
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'Stride with Safety',
-    description: 'Stride with Safety is a hardware-based smart shoe developed to enhance personal safety by providing a reliable emergency alert mechanism. Designed for ease of use and portability, the system enables users to quickly trigger an emergency response during critical situations. The project focuses on creating a practical wearable safety solution through efficient electronic circuit design and hardware integration.',
+    description: 'Stride with Safety is a hardware-based smart shoe designed to enhance personal safety through an integrated emergency alert mechanism, offering a practical and reliable solution for emergency situations.',
     tech: ['Electronics', 'embedded-systems', 'Sensors', 'Wearable Technology'],
     icon: ShieldCheck,
     color: 'from-rose-400 to-orange-500',
