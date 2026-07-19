@@ -7,7 +7,7 @@ const education = [
   {
     degree: 'B.Tech Computer Science and Business Systems',
     institution: 'R.M.D Engineering College',
-    period: '2022 - 2026',
+    period: '2024 - 2028',
     score: 'CGPA: 8.22',
     icon: GraduationCap,
     details: ['Specialization in CSBS', 'Focus on AI & Web Technologies'],
@@ -15,7 +15,7 @@ const education = [
   {
     degree: 'HSC (Higher Secondary Certificate)',
     institution: 'Higher Secondary School',
-    period: '2021 - 2022',
+    period: '2021 - 2023',
     score: '82.5%',
     icon: BookOpen,
     details: ['Computer Science stream', 'Strong academic performance'],
@@ -23,7 +23,7 @@ const education = [
   {
     degree: 'SSLC (Secondary School Leaving Certificate)',
     institution: 'Secondary School',
-    period: '2019 - 2020',
+    period: '2009 - 2021',
     score: '93.6%',
     icon: Award,
     details: ['Outstanding academic achievement', 'All-round excellence'],
