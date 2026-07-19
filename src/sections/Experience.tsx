@@ -19,7 +19,7 @@ const experiences = [
     role: 'Data Science Intern',
     period: 'June 2026',
     location: 'On-Site',
-    logo: 'https://i.postimg.cc/PrjGr4BB/dlk.png',
+    logo: 'https://media.glassdoor.com/sqll/755175/dlk-technologies-squarelogo-1502891676679.png',
     description: 'Gained hands-on experience in data analysis, machine learning, and solving real-world business problems.',
     skills: ['Machine Learning', 'Visualization', 'Data Analysis'],
     color: 'emerald',
