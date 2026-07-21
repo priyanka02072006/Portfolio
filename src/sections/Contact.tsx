@@ -98,23 +98,23 @@ export default function Contact() {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="lg:col-span-3"
-          >
-            <div className="glass rounded-2xl p-8 h-full flex flex-col justify-center">
-  <h3 className="text-4xl font-bold text-yellow-400 mb-6">
-    LET'S CONNECT
-  </h3>
+         <motion.div
+  initial={{ opacity: 0, x: 30 }}
+  animate={isVisible ? { opacity: 1, x: 0 } : {}}
+  transition={{ duration: 0.7, delay: 0.2 }}
+  className="lg:col-span-3 flex items-center"
+>
+  <div className="w-full">
+    <h3 className="text-4xl font-bold text-yellow-400 mb-6">
+      LET'S CONNECT
+    </h3>
 
-  <p className="text-gray-300 text-lg leading-8">
-    I'm always open to discussing projects, internships, collaborations,
-    or new opportunities.
-  </p>
-</div>
-          </motion.div>
+    <p className="text-gray-300 text-lg leading-8">
+      I'm always open to discussing projects, internships,
+      collaborations, or new opportunities.
+    </p>
+  </div>
+</motion.div>
         </div>
       </div>
     </section>
