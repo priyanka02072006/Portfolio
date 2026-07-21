@@ -102,9 +102,9 @@ export default function Contact() {
   initial={{ opacity: 0, x: 30 }}
   animate={isVisible ? { opacity: 1, x: 0 } : {}}
   transition={{ duration: 0.7, delay: 0.2 }}
-  className="lg:col-span-3 flex items-center"
+  className="lg:col-span-3 flex items-center justify-center"
 >
-  <div className="w-full">
+  <div className="glass rounded-2xl p-6 max-w-md mx-auto min-h-[220px] flex flex-col justify-center">
     <h3 className="text-4xl font-bold text-yellow-400 mb-6">
       LET'S CONNECT
     </h3>
