@@ -33,7 +33,7 @@ function SkillChip({ name, delay, isVisible }: { name: string; delay: number; is
       animate={isVisible ? { opacity: 1, scale: 1 } : {}}
       transition={{ duration: 0.4, delay, ease: 'easeOut' }}
       whileHover={{ y: -2 }}
-      className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium text-gray-200 bg-white/5 border border-white/10 hover:border-cyan-400/50 hover:text-cyan-300 transition-colors"
+      className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium text-gray-900 dark:text-gray-200 bg-white/5 border border-white/10 hover:border-cyan-400/50 hover:text-cyan-300 transition-colors"
     >
       {name}
     </motion.span>
@@ -54,7 +54,7 @@ function SkillCard({ category, index }: { category: SkillCategory; index: number
         whileHover={{ boxShadow: '0 0 40px rgba(34, 211, 238, 0.15)' }}
         className="glass rounded-xl p-6 h-full flex flex-col transition-all duration-300"
       >
-        <h3 className="text-white font-semibold text-lg mb-5 flex items-center gap-2">
+        <h3 className="text-gray-900 dark:text-white font-semibold text-lg mb-5 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-cyan-400" />
           {category.title}
         </h3>
