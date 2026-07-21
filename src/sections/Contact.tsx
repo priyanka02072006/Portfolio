@@ -104,126 +104,16 @@ export default function Contact() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="lg:col-span-3"
           >
-            <form onSubmit={handleSubmit} className="glass rounded-2xl p-6 sm:p-8 space-y-5">
-              {[
-                { name: 'name', type: 'text', placeholder: 'Your Name', label: 'Name' },
-                { name: 'email', type: 'email', placeholder: 'Your Email', label: 'Email' },
-              ].map((field) => (
-                <div key={field.name} className="relative">
-                  <motion.label
-                    animate={focused === field.name || formData[field.name as keyof typeof formData]
-                      ? { y: -24, scale: 0.85, color: '#22d3ee' }
-                      : { y: 0, scale: 1, color: '#6b7280' }}
-                    className="absolute left-4 top-3.5 text-sm pointer-events-none origin-left"
-                  >
-                    {field.label}
-                  </motion.label>
-                  <input
-                    type={field.type}
-                    value={formData[field.name as keyof typeof formData]}
-                    onChange={(e) => setFormData({ ...formData, [field.name]: e.target.value })}
-                    onFocus={() => setFocused(field.name)}
-                    onBlur={() => setFocused(null)}
-                    disabled={isDisabled}
-                    className="w-full bg-dark-700/50 border border-gray-700/50 rounded-lg px-4 py-3.5 text-white text-sm outline-none focus:border-cyan-400/50 transition-colors disabled:opacity-50"
-                  />
-                </div>
-              ))}
+            <div className="glass rounded-2xl p-8 h-full flex flex-col justify-center">
+  <h3 className="text-4xl font-bold text-yellow-400 mb-6">
+    LET'S CONNECT
+  </h3>
 
-              <div className="relative">
-                <motion.label
-                  animate={focused === 'message' || formData.message
-                    ? { y: -24, scale: 0.85, color: '#22d3ee' }
-                    : { y: 0, scale: 1, color: '#6b7280' }}
-                  className="absolute left-4 top-3.5 text-sm pointer-events-none origin-left"
-                >
-                  Message
-                </motion.label>
-                <textarea
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  onFocus={() => setFocused('message')}
-                  onBlur={() => setFocused(null)}
-                  disabled={isDisabled}
-                  className="w-full bg-dark-700/50 border border-gray-700/50 rounded-lg px-4 py-3.5 text-white text-sm outline-none focus:border-cyan-400/50 transition-colors resize-none disabled:opacity-50"
-                />
-              </div>
-
-              {/* Status messages */}
-              {status === 'error' && (
-                <motion.div
-                  initial={{ opacity: 0, y: -8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="flex items-start gap-2.5 rounded-lg bg-red-500/10 border border-red-500/30 px-4 py-3"
-                >
-                  <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-red-300 text-sm font-medium">Message not sent</p>
-                    <p className="text-red-300/70 text-xs mt-0.5">{errorMsg}</p>
-                  </div>
-                </motion.div>
-              )}
-
-              {status === 'success' && (
-                <motion.div
-                  initial={{ opacity: 0, y: -8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="flex items-start gap-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 px-4 py-3"
-                >
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-emerald-300 text-sm font-medium">Message sent successfully!</p>
-                    <p className="text-emerald-300/70 text-xs mt-0.5">Thanks for reaching out — I'll get back to you soon.</p>
-                  </div>
-                </motion.div>
-              )}
-
-              <motion.button
-                type="submit"
-                disabled={isDisabled}
-                whileHover={!isDisabled ? { scale: 1.02, boxShadow: '0 0 30px rgba(34, 211, 238, 0.3)' } : {}}
-                whileTap={!isDisabled ? { scale: 0.98 } : {}}
-                className={`w-full py-3.5 rounded-lg text-white font-semibold text-sm flex items-center justify-center gap-2 transition-all ${
-                  status === 'success'
-                    ? 'bg-emerald-500'
-                    : status === 'error'
-                    ? 'bg-gradient-to-r from-red-500 to-red-600'
-                    : 'bg-gradient-to-r from-cyan-400 to-indigo-500'
-                } ${isDisabled ? 'opacity-80 cursor-not-allowed' : ''}`}
-              >
-                {status === 'loading' && (
-                  <>
-                    <Loader2 size={18} className="animate-spin" />
-                    Sending...
-                  </>
-                )}
-                {status === 'success' && (
-                  <>
-                    <CheckCircle2 size={18} />
-                    Sent
-                  </>
-                )}
-                {(status === 'idle' || status === 'error') && (
-                  <>
-                    <Send size={18} /> Send Message
-                  </>
-                )}
-              </motion.button>
-
-              {status === 'success' && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    setStatus('idle');
-                    setFocused(null);
-                  }}
-                  className="w-full text-center text-sm text-gray-400 hover:text-cyan-400 transition-colors"
-                >
-                  Send another message
-                </button>
-              )}
-            </form>
+  <p className="text-gray-300 text-lg leading-8">
+    I'm always open to discussing projects, internships, collaborations,
+    or new opportunities.
+  </p>
+</div>
           </motion.div>
         </div>
       </div>
